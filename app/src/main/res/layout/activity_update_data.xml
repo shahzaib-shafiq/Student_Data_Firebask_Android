@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateData"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_data"
+                android:textSize="30sp"
+                android:textAlignment="center"
+
+
+                ></TextView>
+
+
+
+            <!--            1.1 Name-->
+            <!--            1.2 Dept-->
+            <!--            1.3 Reg No.-->
+            <!--            1.4 CGPA-->
+            <!--            1.5 Email-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateName"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="@string/enter_name"
+                android:gravity="start|center_vertical"
+                android:autofillHints=""
+
+                tools:ignore="TextFields,VisualLintTextFieldSize"></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateDept"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="@string/enter_dept"
+                android:gravity="start|center_vertical"
+
+                tools:ignore="TextFields,VisualLintTextFieldSize"
+                android:autofillHints=""></EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateReg_No"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Enter Reg No"
+                android:gravity="start|center_vertical"
+                tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize"
+                android:autofillHints=""
+                ></EditText>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateCGPA"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="@string/enter_cgpa"
+                android:gravity="start|center_vertical"
+                android:autofillHints=""
+                tools:ignore="TextFields,VisualLintTextFieldSize"></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateEmail"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="@string/enter_email"
+                android:gravity="start|center_vertical"
+
+                android:autofillHints=""
+                tools:ignore="TextFields,VisualLintTextFieldSize"></EditText>
+
+            <Button
+                android:id="@+id/btnupdatedata"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:onClick="UpdateData"
+                android:text="@string/update_datas"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                tools:ignore="VisualLintButtonSize,DuplicateSpeakableTextCheck"></Button>
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/main_menu"
+                android:onClick="ReturntoMain"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                tools:ignore="VisualLintButtonSize" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

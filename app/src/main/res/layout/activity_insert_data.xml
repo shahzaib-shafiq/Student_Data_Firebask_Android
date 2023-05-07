@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertData"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insert Data"
+                android:textSize="30sp"
+                android:textAlignment="center"
+
+
+                ></TextView>
+
+
+
+            <!--            1.1 Name-->
+            <!--            1.2 Dept-->
+            <!--            1.3 Reg No.-->
+            <!--            1.4 CGPA-->
+            <!--            1.5 Email-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadName"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Enter Name"
+                android:gravity="start|center_vertical"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadDept"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Enter Dept"
+                android:gravity="start|center_vertical"
+                ></EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadReg_No"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Enter Reg No"
+                android:gravity="start|center_vertical"
+                ></EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadCGPA"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Enter CGPA"
+                android:gravity="start|center_vertical"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadEmail"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Enter Email"
+                android:gravity="start|center_vertical"
+                ></EditText>
+
+            <Button
+                android:id="@+id/btninsertdata"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Insert Data"
+                android:onClick="EnterData"
+                android:textSize="18sp"
+
+
+                app:cornerRadius="20dp"></Button>
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Main Menu"
+                android:onClick="ReturntoMain"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

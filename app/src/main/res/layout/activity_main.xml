@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <Button
+        android:id="@+id/btnsave"
+        android:onClick="InsertData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/savedata"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/Report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reports"
+        android:onClick="GetReports"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/Delbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DeleteButton"
+        android:onClick="DeleteData"
+        tools:ignore="VisualLintButtonSize,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/Updatedata"
+        android:onClick="UpdataData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>
