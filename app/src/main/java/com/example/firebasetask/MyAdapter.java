@@ -1,64 +1,62 @@
 package com.example.firebasetask;
 
+import android.app.Activity;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>  {
+    ArrayList<Users> StudentArrayList;
+    Context context;
 
-
-    ArrayList<Users> list ;
-
-    public MyAdapter(ArrayList<Users> list)
-    {
-       this.list= list;
-
+    public MyAdapter(ArrayList<Users> studentArrayList, Context context) {
+        StudentArrayList = studentArrayList;
+        this.context = context;
     }
-
 
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.card_holder,parent,false);
-
-        return new MyViewHolder(view);
-
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_by_cgpa,parent,false);
+        return  new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.Name.setText(list.get(position).getName());
-        holder.Dept.setText(list.get(position).getDept());
-
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.regNo.setText(StudentArrayList.get(position).getReg_No());
+        holder.name.setText(StudentArrayList.get(position).getName());
+        holder.email.setText(StudentArrayList.get(position).getEmail());
+        holder.cgpa.setText(StudentArrayList.get(position).getcGPA());
+        holder.dept.setText(StudentArrayList.get(position).getDept());
     }
 
     @Override
     public int getItemCount() {
-        return list.size();
+        return StudentArrayList.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView Name,Dept,Reg_No,CGPA,Email;
-        public MyViewHolder(@NonNull View itemView) {
+    public class ViewHolder extends RecyclerView.ViewHolder{
+
+        TextView regNo,name,cgpa,dept,email;
+
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            Name=itemView.findViewById(R.id.retname);
-            Dept=itemView.findViewById(R.id.retdept);
-
+            regNo = itemView.findViewById(R.id.txtregno);
+            name = itemView.findViewById(R.id.txtname);
+            cgpa = itemView.findViewById(R.id.txtcgpa);
+            dept = itemView.findViewById(R.id.txtdept);
+            email = itemView.findViewById(R.id.txtemail);
         }
     }
-
-
 }

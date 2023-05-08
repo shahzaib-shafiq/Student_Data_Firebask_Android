@@ -2,6 +2,7 @@ package com.example.firebasetask;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -34,5 +35,10 @@ public class DeleteData extends AppCompatActivity {
         String userid=editText.getText().toString();
         reference.child(userid).removeValue();
 
+    }
+
+    public void Reurntomain(View view) {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }

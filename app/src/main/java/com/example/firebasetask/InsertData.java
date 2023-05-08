@@ -77,8 +77,7 @@ public class InsertData extends AppCompatActivity {
         cGPA=CGPA.getText().toString();
         email=Email.getText().toString();
 
-        Users users=new Users(name,dept,cGPA,email);
-
+        Users users=new Users(name,dept,reg_No,cGPA,email);
 
         database=FirebaseDatabase.getInstance("https://studentfirebase-883ab-default-rtdb.firebaseio.com/");
         reference=database.getReference("students");

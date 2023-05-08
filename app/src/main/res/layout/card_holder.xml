@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/retdept"
+            android:id="@+id/retregno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sample"
@@ -30,6 +30,39 @@
     >
 
 </TextView>
+
+        <TextView
+            android:id="@+id/retdept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/samples"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/retcgpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/samples"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/retemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/samples"
+            >
+
+        </TextView>
+
+
+
+
+
     </LinearLayout>
 <View
     android:layout_width="match_parent"

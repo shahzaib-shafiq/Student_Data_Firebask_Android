@@ -15,13 +15,15 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView;
         String firstname,lastname,age,username;
+        Users users;
+
         @SuppressLint("WrongViewCast")
         @Override
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    }
+        }
 
         public void InsertData(View view) {
                 Intent intent = new Intent(this,InsertData.class);
@@ -45,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
     public void GetReports(View view) {
 
         Intent intent = new Intent(this,RetriveData.class);
+
         startActivity(intent);
+
 
     }
 }

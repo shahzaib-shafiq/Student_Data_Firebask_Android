@@ -3,6 +3,7 @@ package com.example.firebasetask;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -50,7 +51,6 @@ public class UpdateData extends AppCompatActivity {
         cGPA=CGPA.getText().toString();
         email=Email.getText().toString();
 
-
         updateData(name,dept,reg_No,cGPA,email);
         
 
@@ -82,6 +82,13 @@ public class UpdateData extends AppCompatActivity {
                }
             }
         });
+
+    }
+
+    public void ReturntoMain(View view) {
+
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
 
     }
 }

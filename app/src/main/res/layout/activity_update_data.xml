@@ -117,13 +117,14 @@
                 android:textSize="18sp"
                 app:cornerRadius="20dp"
                 tools:ignore="VisualLintButtonSize,DuplicateSpeakableTextCheck"></Button>
+
             <Button
                 android:id="@+id/btnback"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/main_menu"
                 android:onClick="ReturntoMain"
+                android:text="@string/main_menu"
                 android:textSize="18sp"
                 app:cornerRadius="20dp"
                 tools:ignore="VisualLintButtonSize" />

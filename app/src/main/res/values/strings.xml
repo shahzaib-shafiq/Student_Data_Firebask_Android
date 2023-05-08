@@ -23,4 +23,9 @@
     <string name="update_datas">Update Data</string>
     <string name="sample">sample</string>
     <string name="samples">sample</string>
+    <string name="regno">RegNo</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="dept">Dept</string>
+    <string name="cgpa">Cgpa</string>
 </resources>
