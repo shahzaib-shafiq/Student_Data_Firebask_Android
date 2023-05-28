@@ -1,15 +1,12 @@
 package com.example.firebasetask;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -19,7 +16,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     ArrayList<Users> StudentArrayList;
     Context context;
 
-    public MyAdapter(ArrayList<Users> studentArrayList, Context context) {
+    public MyAdapter(ArrayList<Users> studentArrayList) {
         StudentArrayList = studentArrayList;
         this.context = context;
     }
