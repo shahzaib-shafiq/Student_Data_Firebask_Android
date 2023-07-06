@@ -58,16 +58,10 @@ public class InsertData extends AppCompatActivity {
         CGPA=findViewById(R.id.uploadCGPA);
         Email=findViewById(R.id.uploadEmail);
 
-
-        //reference.removeValue();
-
+       //reference.removeValue();
 
 
-
-
-
-    }
-
+   }
 
     public void EnterData(View view) {
 
@@ -88,9 +82,5 @@ public class InsertData extends AppCompatActivity {
     public void ReturntoMain(View view) {
         Intent intent= new Intent(this,MainActivity.class);
         startActivity(intent);
-
-
     }
-
-
 }

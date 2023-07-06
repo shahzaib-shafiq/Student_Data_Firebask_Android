@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         public void InsertData(View view) {
                 Intent intent = new Intent(this,InsertData.class);
-               startActivity(intent);
+                startActivity(intent);
 
         }
 

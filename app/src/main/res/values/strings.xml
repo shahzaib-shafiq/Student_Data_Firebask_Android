@@ -28,4 +28,11 @@
     <string name="email">Email</string>
     <string name="dept">Dept</string>
     <string name="cgpa">Cgpa</string>
+    <string name="retrieve_data">Retrieve Data</string>
+    <string name="first_name">First name:</string>
+    <string name="textview">TextView</string>
+    <string name="last_name">Last name:</string>
+    <string name="textviews">TextView</string>
+    <string name="ages">Age</string>
+    <string name="textviewc">TextView</string>
 </resources>

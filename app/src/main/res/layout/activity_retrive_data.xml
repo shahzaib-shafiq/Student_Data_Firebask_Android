@@ -14,7 +14,6 @@
        android:padding="10dp"
        android:layout_margin="5dp"
        app:queryHint="Search"
-
        >
 
    </androidx.appcompat.widget.SearchView>

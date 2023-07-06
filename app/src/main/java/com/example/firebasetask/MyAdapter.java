@@ -42,6 +42,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return StudentArrayList.size();
     }
 
+    public void startListening() {
+    }
+
+    public void stopListening() {
+    }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 

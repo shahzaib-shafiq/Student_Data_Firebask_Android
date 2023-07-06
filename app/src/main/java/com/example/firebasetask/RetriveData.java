@@ -28,12 +28,11 @@ public class RetriveData extends AppCompatActivity {
 
     RecyclerView recyclerView;
     MyAdapter mainAdapter;
-
     SearchView searchView;
     FirebaseDatabase database;
     Users users;
 
-
+    
     ArrayList<Users> list;
     DatabaseReference reference;
     @Override
@@ -57,7 +56,9 @@ public class RetriveData extends AppCompatActivity {
         {
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                public void onDataChange(@NonNull DataSnapshot snapshot)
+
+                {
 
                     if(snapshot.exists())
                     {
@@ -65,12 +66,9 @@ public class RetriveData extends AppCompatActivity {
                         list=new ArrayList<>();
                         for (DataSnapshot ds: snapshot.getChildren())
                         {
-
-
                             list.add(ds.getValue(Users.class));
-
-
                         }
+
                         MyAdapter myAdapter= new MyAdapter(list);
                         recyclerView=findViewById(R.id.rv);
                         searchView = findViewById(R.id.SearchView);

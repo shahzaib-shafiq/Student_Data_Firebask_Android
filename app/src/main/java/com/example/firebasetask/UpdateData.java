@@ -38,9 +38,6 @@ public class UpdateData extends AppCompatActivity {
         CGPA=findViewById(R.id.updateCGPA);
         Email=findViewById(R.id.updateEmail);
 
-
-
-
     }
 
     public void UpdateData(View view)
@@ -50,10 +47,7 @@ public class UpdateData extends AppCompatActivity {
         reg_No=Reg_No.getText().toString();
         cGPA=CGPA.getText().toString();
         email=Email.getText().toString();
-
         updateData(name,dept,reg_No,cGPA,email);
-        
-
     }
 
     private void updateData(String name, String dept, String reg_no, String cGPA, String email) {
